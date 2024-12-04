@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>ScheduleHub Meeting Room System</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>ScheduleHub Meeting Room System</h1>
+        
+        <div class="section" id="personStatus">
+            <h2>Team Availability</h2>
+            <div class="person-status">
+                <div>Tsholofelo</div>
+                <div class="status available">Available</div>
+            </div>
+            <div class="person-status">
+                <div>Lerato</div>
+                <div class="status unavailable">Unavailable</div>
+            </div>
+            <div class="person-status">
+                <div>Katlego</div>
+                <div class="status booked">Booked</div>
+            </div>
+            <div class="person-status">
+                <div>Mashadi</div>
+                <div class="status available">Available</div>
+            </div>
+        </div>
+
+        <div class="section" id="bookingForm">
+            <h2>Book a Meeting</h2>
+            <label for="participant">Select Participant:</label>
+            <select id="participant" name="participant">
+                <option value="Tsholofelo">Tsholofelo</option>
+                <option value="Lerato">Lerato</option>
+                <option value="Katlego">Katlego</option>
+                <option value="Mashadi">Mashadi</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+
+            <label for="room">Room:</label>
+            <select id="room" name="room">
+                <option value="Room A">Room A</option>
+                <option value="Room B">Room B</option>
+                <option value="Room C">Room C</option>
+                <option value="Room D">Room D</option>
+            </select>
+
+            <button onclick="bookMeeting()">Book Meeting</button>
+        </div>
+
+
+
+        <div class="section" id="scheduleView">
+            <div class="schedule-column">
+                <h3>Room Availability Details</h3>
+
+               
+            
+            <!--<div class="schedule-column">
+                <h3>Room B</h3>
+                
+            </div>
+            <div class="schedule-column">
+                <h3>Room C</h3>
+               
+            </div>
+            <div class="schedule-column">
+                <h3>Room D</h3>
+                
+            </div>
+        </div> -->
+
+        <div class="section" id="roomList">  
+            <div class="room-card">
+                <h3>Room A</h3>
+                <p>Capacity: 6 people</p>
+                <p>Projector: Yes</p>
+                <p>Occupied: Yes</p>
+            </div>
+            <div class="room-card">
+                <h3>Room B</h3>
+                <p>Capacity: 4 people</p>
+                <p>Projector: No</p>
+                <p>Occupied: No</p>
+            </div>
+            <div class="room-card">
+                <h3>Room C</h3>
+                <p>Capacity: 8 people</p>
+                <p>Projector: Yes</p>
+                <p>Occupied: No</p>
+            </div>
+            <div class="room-card">
+                <h3>Room D</h3>
+                <p>Capacity: 10 people</p>
+                <p>Projector: Yes</p>
+                <p>Occupied: Yes</p>
+            </div>
+        </div>
+
+       
+        
+    </div>
+
+</body>
+</html>

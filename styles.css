@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #1f6f78;
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #5dacbd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+#bookingForm {
+    display: grid;
+    gap: 10px;
+}
+#bookingForm input, 
+#bookingForm select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+.person-status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.status {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.available {
+    background-color: #4CAF50;
+    color: white;
+}
+.unavailable {
+    background-color: #f44336;
+    color: white;
+}
+.booked {
+    background-color: #FF9800;
+    color: white;
+}
+#scheduleView {
+    text-align: center;
+    display: grid;
+    gap: 10px;
+}
+#roomList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.room-card {
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(25% - 10px);
+}
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+.calendar-day {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
